@@ -25,4 +25,4 @@ make && st-flash --format ihex write build/main.hex
 
 ## Note
 
-Releases里有预编译好的二进制文件，分为正式版本和debug版本
+Releases里有预编译好的二进制文件，分为正式版本和debug版本，可直接烧写
