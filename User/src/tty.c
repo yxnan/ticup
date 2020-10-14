@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * @file    bsp_tty.c
+  * @file    tty.c
   * @author  yxnan@pm.me
   * @date    2020-09-26
   * @brief   stm32f103 tty debug support
