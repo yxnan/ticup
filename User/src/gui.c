@@ -88,7 +88,7 @@ void GUI_Init(void)
                         GRAPH_END_X,
                         GRAPH_END_Y);
 
-    // magic numbers below
+    // draw freq axis, aligned manually.
     LCD_SetTextColor(CH2_COLOR);
     uint16_t x = GRAPH_START_X+8;
     for (uint16_t i = 1; i <= 9; i++)
@@ -192,43 +192,43 @@ static void plot_graph(uint16_t buffer[], GraphTypeEnm graphType)
 
 void def_button(void)
 {
-    button[0].param = F1_NORMAL;
+    button[0].param       = F1_NORMAL;
     button[0].x           = BUTTON_START_X;
     button[0].y           = BUTTON_START_Y;
     button[0].touch_flag  = 0;
     button[0].btn_command = switch_mode;
 
-    button[1].param = F2_TOP_DISTORTION;
+    button[1].param       = F2_TOP_DISTORTION;
     button[1].x           = BUTTON_START_X;
     button[1].y           = BUTTON_START_Y + 1*BUTTON_HEIGHT + 1*BUTTON_GAP;
     button[1].touch_flag  = 0;
     button[1].btn_command = switch_mode;
 
-    button[2].param = F3_BOTTOM_DISTORTION;
+    button[2].param       = F3_BOTTOM_DISTORTION;
     button[2].x           = BUTTON_START_X;
     button[2].y           = BUTTON_START_Y + 2*BUTTON_HEIGHT + 2*BUTTON_GAP;
     button[2].touch_flag  = 0;
     button[2].btn_command = switch_mode;
 
-    button[3].param = F4_TWOWAY_DISTORTION;
+    button[3].param       = F4_TWOWAY_DISTORTION;
     button[3].x           = BUTTON_START_X;
     button[3].y           = BUTTON_START_Y + 3*BUTTON_HEIGHT + 3*BUTTON_GAP;
     button[3].touch_flag  = 0;
     button[3].btn_command = switch_mode;
 
-    button[4].param = F5_CROSSOVER_DISTORTION;
+    button[4].param       = F5_CROSSOVER_DISTORTION;
     button[4].x           = BUTTON_START_X;
     button[4].y           = BUTTON_START_Y + 4*BUTTON_HEIGHT + 4*BUTTON_GAP;
     button[4].touch_flag  = 0;
     button[4].btn_command = switch_mode;
 
-    button[5].param = F6_INPUT_SOURCE;
+    button[5].param       = F6_INPUT_SOURCE;
     button[5].x           = BUTTON_START_X + BUTTON_WIDTH + 5;
     button[5].y           = button[3].y;
     button[5].touch_flag  = 0;
     button[5].btn_command = switch_source;
 
-    button[6].param = F7_AUTO_SERIAL_AP;
+    button[6].param       = F7_AUTO_SERIAL_AP;
     button[6].x           = BUTTON_START_X + BUTTON_WIDTH + 5;
     button[6].y           = button[2].y;
     button[6].touch_flag  = 0;
